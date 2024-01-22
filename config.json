@@ -19,12 +19,14 @@
   "options": {
 	  "RTSP_PROTOCOLS": "tcp",
 	  "RTSP_PATHS_ALL_RUNONDEMAND": "echo 'incoming'",
-	  "RTSP_PATHS_ALL_RUNONDEMANDRESTART": "yes"
+	  "RTSP_PATHS_ALL_RUNONDEMANDRESTART": "yes",
+	  "RTSP_PATHS_CAM_SOURCE": "rpiCamera"
   },
   "schema": {
 	  "RTSP_PROTOCOLS": "list(tcp)",
 	  "RTSP_PATHS_ALL_RUNONDEMAND": "list(echo 'incoming')",
-	  "RTSP_PATHS_ALL_RUNONDEMANDRESTART": "list(yes)"
+	  "RTSP_PATHS_ALL_RUNONDEMANDRESTART": "list(yes)",
+	  "RTSP_PATHS_CAM_SOURCE":  "list(rpiCamera)"
   },
-  "image": "aler9/rtsp-simple-server"
+  "image": "aler9/rtsp-simple-server:latest-rpi"
 }
